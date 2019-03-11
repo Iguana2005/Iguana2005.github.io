@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>ОСАГО/КАСКО</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #fafafa;
+	font-family: Trebuchet MS, Helvetica;
+}
+
+header {
+	width: 100%;
+	padding: 10px 0.5% 0px 0.5%;
+	background: transparent;
+	float: left;
+	position: fixed;
+}
+
+header #logo{
+color: #04B404;
+cursor: pointer;
+}
+
+header #logo span {
+	font-size: 1.9em;
+	line-height: 40px;
+	margin-left: 40px;
+	front-family: 'Suez One', serif;
+}
+@media (min-width: 701px) {
+	#logo {
+		float: left;
+		width: 30%;
+		font-size: 1.1em;
+	}
+	#about {
+		float: right;
+		width: 67%;
+	
+	}
+}
+
+@media (max-width: 700px) {
+	#logo {
+		margin-top: 15px;
+		width: 100%;
+		font-size: 1.5em;
+	}
+
+	#about {
+		float: left;
+		width: 100%;
+	}
+}
+
+#about {
+	text-align: center;
+	font-size: 1.1em;
+	line-height: 60px;
+	margin-bottom: 10px;
+}
+
+#about > a {color: #fff}
+
+#about > a: hover {
+	color: #b0b0b0;
+	text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+	margin-right: 7%;
+}
+
+.fixed {
+	z-index: 5000;
+	background-color: #fff;
+	border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+	color: #04B404;
+}
+
+.fixed #about a {color: #04B404}
+.fixed #about a:hover {color: #04B404}
+
+#top {
+	width: 100%;
+	background-image: url(http://infoglaz.ru/wp-content/uploads/2013/03/2905.jpg);
+	background-blend-mode: multiply;
+	background-color: #2e3a44;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	}
+
+@media (min-width: 1001px) {
+	#top {
+		font-size: 3em;
+		height: 1000:
+	}
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+	#top {
+		font-size: 2em;
+		height: 600px;
+	}
+}
+
+@media (max-width: 650px) {
+	#top {
+		font-size: 1.3em;
+		padding-top: 50%;
+		height: 500px;
+	}
+}
+
+
+#top h1 {
+	padding-top: 20%;
+}
+
+#top h3 {
+	color: #fff;
+}
+
+#main {
+	padding: 10px 20%;
+	width: 60%;
+	float: left;
+	background-color: #f6f6f6;
+	border-top: 2px solid silver;
+	color: #484848;
+	font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+	#main {
+	padding: 10px 20%;
+	width: 60%;
+	}
+}
+
+@media (max-width: 1400px) {
+	#main {
+	padding: 10px 10%;
+	width: 48%;
+	}
+}
+
+@media (max-width: 700px) {
+	#main div {
+	width: 98%!important;
+	margin-bottom: 20px;
+	}
+}
+#main div {
+	width:80%;
+	margin-right:2%;
+	float: left;
+}
+
+#main h2 {font-size: 3em}
+#main span {color: #a0a0a0}
+
+#overview {
+	float: left;
+	background-image: url(https://avatanplus.com/files/resources/mid/574c93b7de51515503210667.jpg);
+	background-blend-mode: multiply;
+	background-color: #4f1c75;
+	background-size: cover;
+	background-attachment: fixed;
+
+	padding: 100px 0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+#overview h2 {font-size: 4em}
+#overview h4 {color: #ccc; font-size: 1.5em}
+
+#overview .img {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+	margin-top: 50px;
+}
+
+#overview .img:nth-child(odd) {
+	margin-left: 18%;
+}
+
+#overview img {
+	background: #fafafa;
+	padding: 5px;
+	border: 2px solid silver;
+	float: left;
+	width: 100%;
+	max-width: 500 px;
+}
+
+#overview span {
+	float: left;
+	width: 100%;
+	font-size: 2em;
+	margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+	#overview .img {
+		width: 80%!important;
+		margin-right: 0!important;
+		margin-left: 10%!important;
+		}
+	}
+
+#contacts {
+	width: 100%;
+	float: left;
+	padding-bottom: 40px;
+	padding-top: 70px;
+	border-top: 4px solid #ccc;
+	background: #f4f4f4;
+	}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: lighter;
+	}
+
+#contacts h5 {font-size: 3em; color: #4f4f4f}
+
+#form_input {
+	margin-top: 15px;
+	width:35%;
+	margin-left: 38%;
+	font-size: 1.1em;
+	}
+
+#form_input label {
+	color: #505050;
+	cursor: pointer;
+	font-size: 1.4em;
+	font-family: 'Roboto Slab', serif;
+	}
+
+#form_input label > span {
+	color: #e87e7e;
+	}
+
+#form_input input,#form_input textarea {
+	margin-bottom: 10px;
+	width: 70%;
+	padding: 10px 2%;
+	border-radius: 7px;
+	border: 2px solid silver;
+	font-size: 0.9em;
+	color: #4a4a4a;
+	}
+
+#form_input input:focus, #form_input textarea: focus {
+	border-color: #333;
+	}
+
+.btn {
+	float: left;
+	border-radius: 5px;
+	padding: 5px 9px;
+	font-size: 1.2em;
+	background-color: #ec6550;
+	text-shadow: black 0 0 2px;
+	cursor: pointer;
+	color: white;
+	font-family: 'Roboto Slab', serif;
+	}
+
+.btn:hover {
+	background-color: #c15443;
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+			<span>
+				<h1>РЕСО</h1>
+				<h3>гарантия</h3>
+			</span>
+		</div>
+		<div id="about">
+			<a href="#" onclick="О нас" onclick="slowScroll('#main')">О нас</a>
+			<a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+			<a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">Частые вопросы</a>
+		</div>
+	</header>
+
+	<div id="top">
+		<h1>Страховка авто</h1>
+		<h3>на все случаи жизни!</h3>
+	</div>
+
+	<div id="main">
+		<div class="intro">
+			<h2>С нами надёжнее</h2>
+			<span>Нам доверяют</span>
+		</div>
+	</div>
+
+	<div class="text">
+		<span>
+			<blockquote>
+				<strong><p>*работаем с 1991 года</p></strong><br>
+				<strong><p>*занимаем 3-е место в народном Топе</p></strong><br>
+				<strong><p>*заботимся о своих клиентах</p></strong>
+			</blockquote>
+		</span>
+	</div>
+
+	<div id="overview">
+		<h2>Важная информация</h2>
+		<h4>Попробуйте</h4>
+
+		<div class="img">
+			<img src="https://img2.motorussia.ru/new/images/630/64/322064.jpg" alt="">
+			<span>Заполнить полис ОСАГО</span>
+		</div>
+
+		<div class="img">
+			<img src="http://autogide.ru/uploads/posts/2017-03/1488546561_autostrahovanie_kasko.jpg" alt="">
+			<span>Заполнить полис КАСКО</span>
+		</div>
+	</div>
+
+	<div id="contacts">
+		<center><h5>Обратная связь</h5></center>
+		<form id="form_input">
+			<label for="name">Имя <span>*</span></label><br>
+			<input type="text" placeholder="Введите имя" name="name" id="name"><br>
+			<label for="email">Ваша почта <span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea type="text" placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+	</div>
+		</form>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		function slowScroll(id) {
+		$('html, body').animate({
+			scrollTop: $(id).offset().top
+		}, 500);
+	}
+
+	$(document).on("scroll", function () {
+		if($(window).scrollTop() === 0)
+			$("header").removeClass("fixed");
+		else
+			$("header").attr("class", "fixed");
+	});
+	</script>
+</body>
+</html>
