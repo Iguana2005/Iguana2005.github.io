@@ -48,9 +48,9 @@ header #logo span {
 		width: 30%;
 		font-size: 1.1em;
 	}
-	#about {
-		float: right;
-		width: 67%;
+#about {
+	float: right;
+	width: 67%;
 	
 	}
 }
@@ -62,9 +62,9 @@ header #logo span {
 		font-size: 1.5em;
 	}
 
-	#about {
-		float: left;
-		width: 100%;
+#about {
+	float: left;
+	width: 100%;
 	}
 }
 
@@ -208,12 +208,12 @@ header.fixed #logo {
 }
 
 #overview img {
-	background: green;
+	background: #323232;
 	padding: 5px;
 	border: 2px solid silver;
 	float: left;
 	width: 100%;
-	max-width: 500 px;
+	max-width: 500px;
 }
 
 #overview span {
@@ -270,7 +270,7 @@ h1, h2, h3, h4, h5 {
 	width: 70%;
 	padding: 10px 2%;
 	border-radius: 7px;
-	border: 2px solid silver;
+	border: 2px solid;
 	font-size: 0.9em;
 	color: #4a4a4a;
 	}
@@ -285,9 +285,9 @@ h1, h2, h3, h4, h5 {
 	padding: 5px 9px;
 	font-size: 1.2em;
 	background-color: #ec6550;
-	text-shadow: black 0 0 2px;
+	text-shadow: #323232 0 0 2px;
 	cursor: pointer;
-	color: white;
+	color: #fafafa;
 	font-family: 'Roboto Slab', serif;
 	}
 
@@ -300,8 +300,8 @@ h1, h2, h3, h4, h5 {
 	<header>
 		<div id="logo" onclick="slowScroll('#top')">
 			<span>
-				<h1>РЕСО</h1>
-				<h3>гарантия</h3>
+				<h1>AVTO</h1>
+				<h3>save</h3>
 			</span>
 		</div>
 		<div id="about">
@@ -311,53 +311,53 @@ h1, h2, h3, h4, h5 {
 		</div>
 	</header>
 
-	<div id="top">
-		<h1>Страховка авто</h1>
-		<h3>на все случаи жизни!</h3>
+<div id="top">
+	<h1>Страховка авто</h1>
+	<h3>на все случаи жизни!</h3>
+</div>
+
+<div id="main">
+	<div class="intro">
+		<h2>С нами надёжнее</h2>
+		<span>Нам доверяют</span>
+	</div>
 	</div>
 
-	<div id="main">
-		<div class="intro">
-			<h2>С нами надёжнее</h2>
-			<span>Нам доверяют</span>
-		</div>
-	</div>
+<div class="text">
+	<span>
+		<strong><p>**********работаем с 1991 года</p></strong><br>
+		<strong><p>**********занимаем 3-е место в народном Топе</p></strong><br>
+		<strong><p>**********заботимся о своих клиентах</p></strong>
+	</span>
+</div>
 
-	<div class="text">
-		<span>
-			<strong><p>**********работаем с 1991 года</p></strong><br>
-			<strong><p>**********занимаем 3-е место в народном Топе</p></strong><br>
-			<strong><p>**********заботимся о своих клиентах</p></strong>
-		</span>
-	</div>
+<div id="overview">
+	<h2>Важная информация</h2>
+	<h4>Попробуйте</h4>
 
-	<div id="overview">
-		<h2>Важная информация</h2>
-		<h4>Попробуйте</h4>
+<div class="img">
+	<img src="https://img2.motorussia.ru/new/images/630/64/322064.jpg" alt="">
+	<span>Заполнить полис ОСАГО</span>
+</div>
 
-		<div class="img">
-			<img src="https://img2.motorussia.ru/new/images/630/64/322064.jpg" alt="">
-			<span>Заполнить полис ОСАГО</span>
-		</div>
+<div class="img">
+	<img src="http://autogide.ru/uploads/posts/2017-03/1488546561_autostrahovanie_kasko.jpg" alt="">
+	<span>Заполнить полис КАСКО</span>
+</div>
+</div>
 
-		<div class="img">
-			<img src="http://autogide.ru/uploads/posts/2017-03/1488546561_autostrahovanie_kasko.jpg" alt="">
-			<span>Заполнить полис КАСКО</span>
-		</div>
-	</div>
-
-	<div id="contacts">
-		<center><h5>Обратная связь</h5></center>
-		<form id="form_input">
-			<label for="name">Имя <span>*</span></label><br>
-			<input type="text" placeholder="Введите имя" name="name" id="name"><br>
-			<label for="email">Ваша почта <span>*</span></label><br>
-			<input type="email" placeholder="Введите email" name="email" id="email"><br>
-			<label for="message">Сообщение <span>*</span></label><br>
-			<textarea type="text" placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
-			<div id="mess_send" class="btn">Отправить</div>
-	</div>
-		</form>
+<div id="contacts">
+	<center><h5>Обратная связь</h5></center>
+	<form id="form_input">
+		<label for="name">Имя <span>*</span></label><br>
+		<input type="text" placeholder="Введите имя" name="name" id="name"><br>
+		<label for="email">Ваша почта <span>*</span></label><br>
+		<input type="email" placeholder="Введите email" name="email" id="email"><br>
+		<label for="message">Сообщение <span>*</span></label><br>
+		<textarea type="text" placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+		<div id="mess_send" class="btn">Отправить</div>
+</div>
+	</form>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
