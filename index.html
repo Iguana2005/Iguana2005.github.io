@@ -8,13 +8,19 @@
     <style>
         .grid {
         display: grid;
-        grid-template-columns: 50% 1fr 1fr 1fr;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 100%;
         }
+        
+    .2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    {
     </style>
 <body>
     <div class="grid">
         <div><h1>1</h1></div>
+        <div><h1>2</h1></div>
         <div><h1>2.1</h1></div>
         <div><h1>2.2</h1></div>
         <div><h1>2.3</h1></div>
