@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Мой 2-ой рисунок</title>
+
+	<style>
+		.ramka{
+			position: relative;
+			display: block;
+			margin-top: -28%;
+			margin-left: 28%;
+			width: 250px;
+			height: 352px;
+			background: none;
+			border: none;
+		}
+
+		.neck {
+			position: absolute;
+			width: 7%;
+			height: 10%;
+			margin-top: 30%;
+			margin-left: 50%;
+			background: #FFC3A0;
+		}
+
+		.golova {
+			position: relative;
+			border-radius: 50%;
+			width: 27%;
+			height: 23%;
+			background: #FFC3A0;
+			margin-top: 0.8%;
+			margin-left: 40%;
+		}
+
+		.body {
+			position: absolute;
+			background: #78ACE8;
+			width: 99%;
+			height: 98%;
+			margin-top: 0%;
+			margin-left: 0%;
+			padding: 0%;
+		}
+
+		.trava {
+			position: relative;
+			width: 100%;
+			height: 150px;
+			background: green;
+			margin-top: 39%;
+			margin-left: 0%;
+		}
+
+		.sun {
+			border-radius: 50%;
+			position: absolute;
+			width: 15%;
+			height: 28%;
+			top: 5%;
+			right: 5%;
+			background: yellow;
+		}
+
+		.cloud-one {
+			border-radius: 50%;
+			position: absolute;
+			background: white;
+			width: 5%;
+			height: 10%;
+			top: 6%;
+			left: 10%;
+		}
+		
+		.cloud-two {
+			top: 6%;
+			left: 14%;
+			border-radius: 50%;
+			position: absolute;
+			background: white;
+			width: 5%;
+			height: 10%;
+		}
+
+		.cloud-three {
+			top: 12%;
+			left: 8%;
+			border-radius: 50%;
+			position: absolute;
+			background: white;
+			width: 5%;
+			height: 10%;
+		}
+
+		.cloud-four {
+			border-radius: 50%;
+			position: absolute;
+			background: white;
+			width: 5%;
+			height: 10%;
+			top: 12%;
+			left: 12%;
+		}
+
+		.cloud-five {
+			border-radius: 50%;
+			position: absolute;
+			background: white;
+			width: 5%;
+			height: 10%;
+			top:12%;
+			left: 16%;
+		}
+
+
+		.top {
+			position: absolute;
+			background: blue;
+			-webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+			clip-path: polygon(50% 100%, 0 0, 100% 0);
+			width: 35%;
+			height: 30%;
+			margin-top: 6%;
+			margin-left: 37%;
+		}
+
+		.bottom {
+			position: absolute;
+			background: blue;
+			width: 50%;
+			height: 47%;
+			margin-top: 17%;
+			margin-left: 29.4%;
+			-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+			clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+		}
+
+		.eye-left {
+			position: absolute;
+			width: 22%;
+			height: 14%;
+			margin-top: 47%;
+			margin-left: 60%;
+			border-radius: 50%;
+			background: white;
+			border: solid brown 0.5px;
+		}
+
+		.eye-right {
+			position: absolute;
+			width: 22%;
+			height: 14%;
+			margin-top: 47%;
+			margin-left: 15%;
+			border-radius: 50%;
+			background: white;
+			border: solid brown 0.5px;
+		}
+
+		.zrachok {
+			position: absolute;
+			border-radius: 47%;
+			background: green;
+			width: 80%;
+			height: 80%;
+			margin-top: 0%;
+			margin-left: 10%;
+			border: solid black 0.5px;
+		}
+
+		.hair {
+			position: absolute;
+			background: orange;
+			border-radius: 50%;
+			width: 35%;
+			height: 30%;
+			margin-top: -1%;
+			margin-left: 36%;
+		}
+
+		.left-leg {
+			position: absolute;
+			width: 5%;
+			height: 19%;
+			background: #FFC3A0;
+			margin-top: 83.2%;
+			margin-left: 45%;
+		}
+
+		.right-leg {
+			position: absolute;
+			width: 5%;
+			height: 19%;
+			background: #FFC3A0;
+			margin-top: 83.2%;
+			margin-left: 60%;
+		}
+
+		.left-hand {
+			position: absolute;
+			background: #FFC3A0;
+			width: 4%;
+			height: 28%;
+			margin-top: 6%;
+			margin-left: 37.1%;
+
+		}
+
+		.right-hand {
+			position: absolute;
+			background: #FFC3A0;
+			width: 4%;
+			height: 28%;
+			margin-top: 6%;
+			margin-left: 67.97%;
+		}
+
+		.mouth {
+			position: absolute;
+			background: red;
+			width: 15%;
+			height: 5%;
+			margin-top: 90%;
+			margin-left: 45%;
+
+		}
+
+		.cloud-odin {
+			border-radius: 50%;
+			position: absolute;
+			background: white;
+			width: 3%;
+			height: 6%;
+			top:25%;
+			left: 60%;
+		}
+
+		.cloud-dva {
+			border-radius: 50%;
+			position: absolute;
+			background: white;
+			width: 3%;
+			height: 6%;
+			top:25%;
+			left: 62%;
+		}
+
+		.cloud-tri {
+			border-radius: 50%;
+			position: absolute;
+			background: white;
+			width: 3%;
+			height: 6%;
+			top:28%;
+			left: 59%;
+		}
+
+		.cloud-chetire {
+			border-radius: 50%;
+			position: absolute;
+			background: white;
+			width: 3%;
+			height: 6%;
+			top:28%;
+			left: 61%;
+		}
+
+		.cloud-pyat {
+			border-radius: 50%;
+			position: absolute;
+			background: white;
+			width: 3%;
+			height: 6%;
+			top:28%;
+			left: 63%;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<div class="body">
+
+		<div class="cloud-one"></div>
+		<div class="cloud-two"></div>
+		<div class="cloud-three"></div>
+		<div class="cloud-four"></div>
+		<div class="cloud-five"></div>
+
+		<div class="cloud-odin"></div>
+		<div class="cloud-dva"></div>
+		<div class="cloud-tri"></div>
+		<div class="cloud-chetire"></div>
+		<div class="cloud-pyat"></div>
+
+		<div class="sun"></div>
+		<div class="trava"></div>
+		<div class="ramka">
+
+			<div class="hair"></div>
+
+			<div class="neck"></div>
+
+			<div class="golova">
+				<div class="eye-left">
+					<div class="zrachok"></div>
+				</div>
+				<div class="eye-right">
+					<div class="zrachok"></div>
+				</div>
+				<div class="mouth"></div>
+			</div>
+			
+			<div class="bottom"></div>
+			<div class="left-hand"></div>
+			<div class="right-hand"></div>
+			<div class="top"></div>
+
+			<div class="left-leg"></div>
+			<div class="right-leg"></div>
+
+		</div>
+	</div>
+</body>
+</html>
