@@ -5,21 +5,26 @@
     <meta charset="utf-8" />
     <title>Calculator</title>
 	<style>
+
 			html {
 			  box-sizing: border-box;
 			}
+
 			*,
 			*::before,
 			*::after {
 			  box-sizing: inherit;
 			}
+
 			body {
 			  margin: 20px;
 			}
+
 			
 			video {
 			  max-width: 100%;
 			}
+
 			
 			blockquote,
 			figure,
@@ -28,18 +33,24 @@
 			  padding-right: 40px;
 			  padding-left: 0;
 			}
+
 			a {
 			  text-decoration: none;
 			}
+
 			a:focus {
 			  outline: none;
 			}
+
 			h6 {
 			  display: block;
 			}
+
 			ul {
 			  list-style: none;
 			}
+
+
 			input,
 			textarea,
 			alles {
@@ -53,6 +64,7 @@
 			  appearance: none;
 			  text-align: left;
 			}
+
 			input:hover,
 			input:active,
 			input:focus,
@@ -65,14 +77,17 @@
 			  outline: one;
 			  background-color: #AFEEEE;
 			}
+
 			:root {
 			  font-family: Helvetica, Arial, sans-serif;
 			}
+
 			html {
 			  font-size: 130%;
 			  font-weight: 100px;
 			  line-height: 1.5;
 			}
+
 			body {
 			  align-items: center;
 			  background-image: linear-gradient(236deg, #9ACD32, #20B2AA);
@@ -80,13 +95,16 @@
 			  height: 94.5vh;
 			  justify-content: center;
 			}
+
 			.main {
 			  max-width: 20em;
 			  box-shadow: 0 0 90px 90px rgba(0, 0, 0, 0.15);
 			}
+
 			.main > p {
 			  text-align: center;
 			}
+
 			.calculator {
 			  border-radius: 0px;
 			  box-shadow: 0 0 90px 90px rgba(0, 0, 0, 0.15);
@@ -96,6 +114,7 @@
 			  max-width: 15em;
 			  overflow: hidden;
 			}
+
 			.textview {
 			  background-image: linear-gradient(to bottom, #66CDAA, #EE82EE);
 			  color: white;
@@ -107,6 +126,7 @@
 			  width: 341px;
 			  height: 140px;
 			}
+
 			.alles {
 			  background-image: linear-gradient(to top, #66CDAA, #EE82EE);
 			  display: grid;
@@ -114,12 +134,14 @@
 			  grid-template-columns: repeat(4, 1fr);
 			  cursor: pointer;
 			}
+
 			.alles > * {
 			  background-color: #E0FFFF;
 			  padding: 0.9em 1.24em;
 			  position: relative;
 			  text-align: center;
 			}
+
 			.alles > *:active::before,
 			.alles > .is-depressed::before {
 			  background-color: rgba(0, 0, 0, 0.5);
@@ -133,15 +155,18 @@
 			  top: 0;
 			  z-index: 1;
 			}
+
 			.button {
 			  background-color: #FF1493;
 			}
+
 			.key--equal {
 			  background-image: linear-gradient(yellow, brown);
 			  background-image: linear-gradient(#FFFF00, #00FF7F);
 			  grid-column: 1 / span 4;
 			  grid-row: 5 / span 4;
 			}
+
 	</style>
 
 
@@ -150,15 +175,18 @@
 		function insert(num){
 			document.form.textview.value=document.form.textview.value+num
 		}
+
 		function equal(){
 			var exp=document.form.textview.value;
 			if(exp){
 				document.form.textview.value=eval(exp)
 			}
 		}
+
 		function clean(){
 			document.form.textview.value="";
 		}
+
 	</script>
 
 
@@ -174,7 +202,7 @@
 						<input class="button" type="button" value="+" onclick="insert('+')">
 						<input class="button" type="button" value="-" onclick="insert('-')">
 						<input class="button" type="button" value="*" onclick="insert('*')">
-						<input class="button" type="button" value="÷" onclick="insert('÷')">
+						<input class="button" type="button" value="÷" onclick="insert('/')">
 						<input class="button1" type="button" value="1" onclick="insert(1)">
 						<input class="button1" type="button" value="2" onclick="insert(2)">
 						<input class="button1" type="button" value="3" onclick="insert(3)">
@@ -183,10 +211,10 @@
 						<input class="button1" type="button" value="4" onclick="insert(4)">
 						<input class="button1" type="button" value="5" onclick="insert(5)">
 						<input class="button1" type="button" value="6" onclick="insert(6)">
-						<input class="button1" type="button" value="9" onclick="insert(9)">
+						<input class="button1" type="button" value="0" onclick="insert(0)">
 						<input class="button1" type="button" value="7" onclick="insert(7)">
 						<input class="button1" type="button" value="8" onclick="insert(8)">
-						<input class="button1" type="button" value="0" onclick="insert(0)">
+						<input class="button1" type="button" value="9" onclick="insert(9)">
 						<input class="button1" type="button" value="." onclick="insert('.')">
         
 						<input class="key--equal" type="button" value="=" onclick="equal()">
